@@ -14,7 +14,7 @@ int main() {
         cout << x;
     } else {
         int end = 1;
-        int start = (int) (min(x, y) / 2);
+        int start = (int) (min(x, y) / 2) + 1;
         for (int i = start; i >= end; i -= 1) {
             if (x % i == 0 && y % i == 0) {
                 cout << i;
