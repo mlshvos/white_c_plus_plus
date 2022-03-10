@@ -15,7 +15,7 @@ int main() {
     } else {
         int end = 1;
         int start = (int) sqrt(x);
-        for (int i = end; i >= start; i -= 1) {
+        for (int i = start; i >= end; i -= 1) {
             if (x % i == 0 && y % i == 0) {
                 cout << i;
             }
