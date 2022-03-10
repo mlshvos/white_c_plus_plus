@@ -9,9 +9,9 @@ int main() {
     cin >> x >> y;
 
     if (x % y == 0) {
-        cout << x;
-    } else if (y % x == 0) {
         cout << y;
+    } else if (y % x == 0) {
+        cout << x;
     } else {
         int end = 1;
         int start = (int) sqrt(x);
