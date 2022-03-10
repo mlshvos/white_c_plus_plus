@@ -13,14 +13,14 @@ int main() {
     } else if (y % x == 0) {
         cout << x;
     } else {
-        int end = 1;
-        int start = (int) (min(x, y) / 2) + 1;
-        for (int i = start; i >= end; i -= 1) {
+        int res = 1;
+        int end = (min(x, y) / 2) + 1;
+        for (int i = 2; i <= end; i += 2) {
             if (x % i == 0 && y % i == 0) {
-                cout << i;
-                break;
+                res = i;
             }
         }
+        cout << res;
     }
 
     return 0;
