@@ -15,7 +15,7 @@ int main() {
     } else {
         int res = 1;
         int end = (min(x, y) / 2) + 1;
-        for (int i = 2; i <= end; i += 2) {
+        for (int i = 2; i <= end; ++i) {
             if (x % i == 0 && y % i == 0) {
                 res = i;
             }
