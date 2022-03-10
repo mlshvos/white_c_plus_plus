@@ -8,7 +8,7 @@ int main() {
 
     cin >> N;
 
-    vector<int> res;
+    vector<int> res = {};
 
     while (N != 0) {
         res.push_back(N % 2);
@@ -16,7 +16,7 @@ int main() {
     }
 
     for (int i = res.size() - 1; i >= 0; --i) {
-        cout << N[i];
+        cout << res[i];
     }
 
     return 0;
