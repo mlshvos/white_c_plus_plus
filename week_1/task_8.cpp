@@ -10,13 +10,16 @@ int main() {
     cin >> x >> y;
 
     int res = 1;
-    for (int i = 2; i <= (x / 2) + 1; ++i) {
+    int i = 2;
+    while (x > 1) {
         if (x % i == 0) {
             x /= i;
             if (y % i == 0) {
                 y /= i;
                 res *= i;
             }
+        } else {
+            i++;
         }
     }
     cout << res;
