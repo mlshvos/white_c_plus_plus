@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include <vector>
 
 using namespace std;
 
@@ -9,13 +8,16 @@ int main() {
 
     cin >> x >> y;
 
+    int a = min(x, y);
+    int b = max(x, y);
+
     int res = 1;
     int i = 2;
-    while (x > 1) {
-        if (x % i == 0) {
-            x /= i;
-            if (y % i == 0) {
-                y /= i;
+    while (a > 1) {
+        if (a % i == 0) {
+            a /= i;
+            if (b % i == 0) {
+                b /= i;
                 res *= i;
             }
         } else {
