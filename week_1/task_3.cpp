@@ -11,7 +11,7 @@ int main() {
     if (D == 0) {
         cout << -b / 2 / a;
     } else if (D > 0) {
-        cout << (-b + sqrt(D)) / 2 / a << (-b - sqrt(D)) / 2 / a;
+        cout << (-b + sqrt(D)) / 2 / a << " " << (-b - sqrt(D)) / 2 / a;
     }
 
     return 0;
