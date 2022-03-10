@@ -13,7 +13,7 @@ int main() {
     } else if (y % x == 0) {
         cout << y;
     } else {
-        int end = 2;
+        int end = 1;
         int start = (int) sqrt(x);
         for (int i = end; i >= start; i -= 1) {
             if (x % i == 0 && y % i == 0) {
