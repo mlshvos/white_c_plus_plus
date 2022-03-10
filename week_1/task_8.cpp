@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <vector>
 
 using namespace std;
 
@@ -8,20 +9,16 @@ int main() {
 
     cin >> x >> y;
 
-    if (x % y == 0) {
-        cout << y;
-    } else if (y % x == 0) {
-        cout << x;
-    } else {
-        int res = 1;
-        int end = (min(x, y) / 2) + 1;
-        for (int i = 2; i <= end; ++i) {
-            if (x % i == 0 && y % i == 0) {
-                res = i;
+    int res = 1;
+    for (int i = 2; i <= (x / 2) + 1; ++i) {
+        if (x % i == 0) {
+            x /= i;
+            if (y % i == 0) {
+                y /= i;
+                res *= i;
             }
         }
-        cout << res;
     }
-
+    cout << res;
     return 0;
 }
